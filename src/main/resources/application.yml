@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: word-count-application
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.Serdes.StringSerde
+      value-serializer: org.apache.kafka.common.serialization.Serdes.StringSerde
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.Serdes.StringSerde
+      value-deserializer: org.apache.kafka.common.serialization.Serdes.StringSerde
+      auto-offset-reset: earliest
