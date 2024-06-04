@@ -22,11 +22,11 @@ public class RandomTransactionsProducer {
 
         while (true) {
             try {
-                transactionsProducer.send(createRandomTransaction("danilo"));
+                transactionsProducer.send(createRandomTransaction("john"));
                 Thread.sleep(100);
-                transactionsProducer.send(createRandomTransaction("luan"));
+                transactionsProducer.send(createRandomTransaction("jane"));
                 Thread.sleep(100);
-                transactionsProducer.send(createRandomTransaction("daniele"));
+                transactionsProducer.send(createRandomTransaction("johnjane"));
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 break;
