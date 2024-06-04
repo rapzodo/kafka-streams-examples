@@ -13,6 +13,6 @@ public class TransactionsProducerTest {
     @Test
     public void createRandomTransaction() throws JSONException {
         final ProducerRecord<String, String> danilo = transactionsProducer.createRandomTransaction("danilo");
-        Assertions.assertThat(danilo.value()).contains("{\"name\":\"danilo\",\"amount\":60,\"time\":");
+        Assertions.assertThat(danilo.value()).contains("{\"name\":\"john\",\"amount\":60,\"time\":");
     }
 }
